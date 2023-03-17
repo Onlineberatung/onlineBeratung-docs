@@ -21,11 +21,18 @@ jobs:
       IMAGE_WEBHOOK_SECRET: ${{ secrets.MS_TEAMS_IMAGE_WEBHOOK_URI }}
       FAIL_WEBHOOK_SECRET: ${{ secrets.MS_TEAMS_FAIL_WEBHOOK_URI }}
     steps:
-      - uses: actions/checkout@v2
-      - name: Download buildfiles artifact
-        uses: actions/download-artifact@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run install
+        uses: borales/actions-yarn@v4
         with:
-          name: targetfiles
+          cmd: install # will run `yarn install` command
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # if needed
+      - name: Test the app
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test # will run `yarn test` command
       - name: Get current time
         id: time
         uses: nanzm/get-time-action@v1.1
