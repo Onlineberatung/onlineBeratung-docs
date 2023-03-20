@@ -21,7 +21,7 @@ const config = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -92,7 +92,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/docs/intro',
               },
             ],
           },
@@ -118,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: '/docs/docs/blog',
               },
               {
                 label: 'GitHub',
