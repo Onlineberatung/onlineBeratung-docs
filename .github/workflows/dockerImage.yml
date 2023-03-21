@@ -23,6 +23,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Checkout onlineberatung docs
+        uses: actions/checkout@v2
+        with:
+            repository: Onlineberatung/onlineBeratung-docs
+            path: './onlineBeratung-docs-opensource'
+      - shell: bash
+        run: |
+          cp -n onlineBeratung-docs-opensource/docs/* ./docs/
+      - shell: bash
+        run: |
+          ls -l ./docs
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
