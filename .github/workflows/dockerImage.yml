@@ -26,7 +26,7 @@ jobs:
       - name: Checkout onlineberatung docs
         uses: actions/checkout@v2
         with:
-            ref: docusaurus-template
+            ref: develop
             repository: Onlineberatung/onlineBeratung-docs
             path: './onlineBeratung-docs-opensource'
       - shell: bash
