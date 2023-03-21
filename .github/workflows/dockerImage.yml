@@ -30,10 +30,7 @@ jobs:
             path: './onlineBeratung-docs-opensource'
       - shell: bash
         run: |
-          cp -n ./onlineBeratung-docs-opensource/docs/* ./docs/
-      - shell: bash
-        run: |
-          ls -l ./docs
+          ls -l      
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
