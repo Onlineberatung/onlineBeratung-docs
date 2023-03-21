@@ -31,13 +31,9 @@ jobs:
             path: './onlineBeratung-docs-opensource'
       - shell: bash
         run: |
-          ls -l   
-          ls -l onlineBeratung-docs-opensource
-          ls -l onlineBeratung-docs-opensource/docs
-      - shell: bash
-        run: |
-          cp -nr onlineBeratung-docs-opensource/docs ./docs
-          ls -l ./docs
+          cp -nr onlineBeratung-docs-opensource/docs .
+          echo "Merged docs content"
+          ls -lR ./docs
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
