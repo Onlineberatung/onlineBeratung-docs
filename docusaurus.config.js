@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Handbuch zur Online-Beratungsplattform der Sozialplattform',
+  tagline: 'Anonym. Sicher. Sozialplattform.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -62,23 +62,22 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/sozialplattform_logo.png',
       navbar: {
-        title: 'My Site',
+        title: 'Sozialplattform',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Sozialplattform Logo',
+          src: 'img/sozialplattform_logo.png',
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Nutzer-Handbuch',
+          // },
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Onlineberatung/onlineBeratung-docs/tree/feat-demo',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,46 +87,24 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Rechtliches',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/docs/intro',
+                label: 'Impressum',
+                to: 'https://onlineberatung.dev.sozialplattform.org/login'
               },
+              {
+                label: 'Nutzungsbedingungen',
+                to: 'https://onlineberatung.dev.sozialplattform.org/login'
+              },
+              {
+                label: 'Datenschutzerklärung',
+                to: 'https://onlineberatung.dev.sozialplattform.org/login'
+              }
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/docs/docs/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+          
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
