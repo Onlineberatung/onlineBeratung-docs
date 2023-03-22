@@ -1,0 +1,33 @@
+---
+title: Software
+sidebar_position: 1
+---
+
+export const Boxed = ({ children }) => (
+  <div
+    style={{
+      color: "white",
+      backgroundColor: "#c33218",
+      padding: "10px",
+      marginBottom: "20px",
+    }}
+  >
+    &#9888; {children}
+  </div>
+);
+
+<span>
+  Um die Applikation der Online-Beratungsplattform bestmöglich verwenden zu
+  können, benötigen Sie einen der folgenden Browser:
+</span>
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge Chromium
+- Safari
+
+<Boxed>
+  <strong>Wichtig:</strong> Es muss immer die aktuelle Browserversion des
+  jeweiligen Anbieters installiert sein. Prüfen sie daher Ihren Browser
+  regelmäßig auf Updates.
+</Boxed>

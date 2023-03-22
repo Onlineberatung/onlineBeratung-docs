@@ -2,46 +2,12 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Vorwort
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Liebe Beraterinnen und Berater,
 
-## Getting Started
+in diesem Benutzerhandbuch finden Sie detaillierte Informationen über die wichtigsten Funktionen der Online-Beratungsplattform der Sozialplattform (onlineberatung.sozialplattform.de). Die Onlineberatung der Sozialplattform ist als direkte Kontaktmöglichkeit zwischen hilfesuchenden Bürgerinnen und ausgebildeten Beratern konzipiert.
 
-Get started by **creating a new site**.
+Die Anwendung kann von allen Geräten aus genutzt werden (Desktop, Handy, Tablet) und wurde in erster Linie mit Blick auf die Benutzerfreundlichkeit entwickelt.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Das Handbuch enthält die Perspektive des Beraters und beschreibt alle Funktionalitäten, welche diesem in der Onlineberatung zur Verfügung stehen. Der Grundaufbau der Software ist für die Ratsuchenden größtenteils identisch zu der der Berater, die wesentlichen Unterschiede bestehen in den Erweiterten Funktionen, die einem Berater zur Verfügung stehen z.B. kann dieser einen Videoanruf initiieren, ein Ratssuchender aber nicht. Während für einen Berater die Angabe einer E-Mail Adresse verpflichtend ist, ist deren Angabe für den Ratssuchenden optional. Aus Gründen der Anonymität wird den Ratssuchenden außerdem empfohlen ein Pseudonym als Nutzername zu verwenden, dass keinen Rückschluss auf ihren Klarnamen zulässt.
