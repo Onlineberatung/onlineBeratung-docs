@@ -1,41 +1,31 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import Color from 'color';
+import { useAppConfig } from '../hooks/useAppConfig';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        {/* <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div> */}
-      </div>
-    </header>
-  );
+function HomepageHeader({ appConfig }) {
+    return (
+        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+            <div className="container">
+                <h1 className="hero__title">{appConfig.title}</h1>
+                <p className="hero__subtitle">{appConfig?.content?.claim}</p>
+            </div>
+        </header>
+    );
 }
-
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+    const { data, loading } = useAppConfig();
+
+    return (
+        <Layout title={data.name}>
+            <HomepageHeader appConfig={data} />
+            <main>
+                <HomepageFeatures />
+            </main>
+        </Layout>
+    );
 }

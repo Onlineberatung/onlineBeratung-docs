@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Handbuch zur Online-Beratungsplattform der Sozialplattform',
-  tagline: 'Anonym. Sicher. Sozialplattform.',
+  title: 'Handbuch zur Online-Beratungsplattform',
+  tagline: 'Online. Anonym. Sicher.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -16,10 +16,8 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Onlineberatung', // Usually your GitHub org/user name.
+  projectName: 'onlineBeratung-docs', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -28,8 +26,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'de',
+    locales: ['de'],
   },
 
   presets: [
@@ -39,25 +37,23 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -69,19 +65,10 @@ const config = {
           alt: 'Sozialplattform Logo',
           src: 'img/sozialplattform_logo.png',
         },
-        items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Nutzer-Handbuch',
-          // },
-          {
-            href: 'https://github.com/Onlineberatung/onlineBeratung-docs/tree/feat-demo',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+        items: [{
+          type: 'localeDropdown',
+          position: 'right',
+        },],
       },
       footer: {
         style: 'dark',
@@ -103,8 +90,12 @@ const config = {
               }
             ],
           },
-          
         ],
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: true,
       },
       prism: {
         theme: lightCodeTheme,
