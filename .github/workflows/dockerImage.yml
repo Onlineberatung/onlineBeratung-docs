@@ -14,7 +14,7 @@ jobs:
   push_to_registry:
     strategy:
       matrix:
-        registry: [ "docker.pkg.github.com", "ghcr.io" ]
+        registry: [ "ghcr.io" ]
     name: Push Docker image to GitHub Packages
     runs-on: ubuntu-latest
     env:
