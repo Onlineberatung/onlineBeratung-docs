@@ -8,12 +8,7 @@ const FeatureList = [
     title: "Nutzer - Handbuch",
     Svg: require("@site/static/img/documentation.svg").default,
     description: <>Stand: 22. Februar 2023 Dokumentversion: SozPS006</>,
-  },
-
-  {
-    title: "Admin - Handbuch",
-    Svg: require("@site/static/img/documentation.svg").default,
-    description: <>Stand: 22. Februar 2023 Dokumentversion: SozPS006</>,
+    path: '/docs/intro'
   },
 ];
 
