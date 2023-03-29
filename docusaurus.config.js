@@ -65,10 +65,10 @@ const config = {
           alt: 'Sozialplattform Logo',
           src: 'img/sozialplattform_logo.png',
         },
-        items: [{
-          type: 'localeDropdown',
-          position: 'right',
-        },],
+        // items: [{
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },],
       },
       footer: {
         style: 'dark',
