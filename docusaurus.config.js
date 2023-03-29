@@ -1,50 +1,50 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Handbuch zur Online-Beratungsplattform',
-  tagline: 'Online. Anonym. Sicher.',
-  favicon: 'img/favicon.ico',
+  title: "Handbuch zur Online-Beratungsplattform",
+  tagline: "Online. Anonym. Sicher.",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: "https://your-docusaurus-test-site.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: "/docs/",
 
-  organizationName: 'Onlineberatung', // Usually your GitHub org/user name.
-  projectName: 'onlineBeratung-docs', // Usually your repo name.
+  organizationName: "Onlineberatung", // Usually your GitHub org/user name.
+  projectName: "onlineBeratung-docs", // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'de',
-    locales: ['de'],
+    defaultLocale: "de",
+    locales: ["de"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
     [
-      '@docusaurus/plugin-ideal-image',
+      "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
         max: 1030, // max resized image's size.
@@ -58,41 +58,36 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/sozialplattform_logo.png',
+      image: "img/sozialplattform_logo.png",
       navbar: {
-        title: 'Sozialplattform',
+        title: "Sozialplattform",
         logo: {
-          alt: 'Sozialplattform Logo',
-          src: 'img/sozialplattform_logo.png',
+          alt: "Sozialplattform Logo",
+          src: "img/sozialplattform_logo.png",
         },
-        // items: [{
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },],
       },
       footer: {
-        // style: 'dark',
         links: [
           {
             items: [
               {
-                label: 'Impressum',
-                to: 'https://onlineberatung.dev.sozialplattform.org/login'
+                label: "Impressum",
+                to: "https://happylife.onlineberatung.net/impressum",
               },
               {
-                label: 'Nutzungsbedingungen',
-                to: 'https://onlineberatung.dev.sozialplattform.org/login'
+                label: "Datenschutzerklärung",
+                to: "https://happylife.onlineberatung.net/datenschutz",
               },
               {
-                label: 'Datenschutzerklärung',
-                to: 'https://onlineberatung.dev.sozialplattform.org/login'
+                label: "Nutzungsbedingungen",
+                to: "https://happylife.onlineberatung.net/nutzungsbedingungen",
               },
-            ]
-          }
+            ],
+          },
         ],
       },
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: "light",
         disableSwitch: true,
         respectPrefersColorScheme: true,
       },

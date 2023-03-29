@@ -6,10 +6,10 @@
 
 /* You can override the default Infima variables here. */
 @font-face {
-  font-family: 'Nunito';
-  src: url('../../static/fonts/Nunito-Regular.ttf') format('truetype');
+  font-family: "Nunito";
+  src: url("../../static/fonts/Nunito-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400
+  font-weight: 400;
 }
 
 :root {
@@ -33,56 +33,55 @@
 
 body {
   font-size: 16px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 main {
-  background-color: #FCFAF9;
+  background-color: #fcfaf9;
 }
 
 nav {
-  background-color: #F4F0EE;
+  background-color: #f4f0ee;
 }
 
 .pagination-nav {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .breadcrumbs {
-  background-color: #FCFAF9;
+  background-color: #fcfaf9;
 }
 
 .menu__link {
-  color: #000000
+  color: #000000;
 }
 
 /* Font settings */
 
 h1 {
   font-size: 38px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 h2 {
   font-size: 38px;
-  font-family: 'Nunito', sans-serif;
-  
+  font-family: "Nunito", sans-serif;
 }
 
 h3 {
   font-size: 32px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 h4 {
   font-size: 28px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 /* Footer settings  */
 
 .footer {
-  background-color: #E7E3E1;
+  background-color: #e7e3e1;
   height: 32px;
   padding: 0;
 }
@@ -113,20 +112,21 @@ h4 {
 }
 
 .footer__title {
-  display:none
+  display: none;
 }
 
 .footer__links {
-  margin: 0
+  margin: 0;
+  height: 32px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 460px) {
   .footer {
     height: 80px;
   }
 
   .footer .col {
-    margin: 0
+    margin: 0;
   }
 
   .footer .footer__item:nth-child(2)::after {
