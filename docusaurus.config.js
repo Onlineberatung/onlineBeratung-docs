@@ -71,10 +71,9 @@ const config = {
         // },],
       },
       footer: {
-        style: 'dark',
+        // style: 'dark',
         links: [
           {
-            title: 'Rechtliches',
             items: [
               {
                 label: 'Impressum',
@@ -87,9 +86,9 @@ const config = {
               {
                 label: 'Datenschutzerklärung',
                 to: 'https://onlineberatung.dev.sozialplattform.org/login'
-              }
-            ],
-          },
+              },
+            ]
+          }
         ],
       },
       colorMode: {

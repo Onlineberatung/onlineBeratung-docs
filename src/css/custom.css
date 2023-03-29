@@ -5,6 +5,13 @@
  */
 
 /* You can override the default Infima variables here. */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../../static/fonts/Nunito-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400
+}
+
 :root {
   --ifm-color-primary: #c33218;
   --ifm-color-primary-dark: #c33218;
@@ -22,6 +29,11 @@
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
 }
 
 main {
@@ -42,4 +54,86 @@ nav {
 
 .menu__link {
   color: #000000
+}
+
+/* Font settings */
+
+h1 {
+  font-size: 38px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+  font-size: 38px;
+  font-family: 'Nunito', sans-serif;
+  
+}
+
+h3 {
+  font-size: 32px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h4 {
+  font-size: 28px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Footer settings  */
+
+.footer {
+  background-color: #E7E3E1;
+  height: 32px;
+  padding: 0;
+}
+
+.footer .container {
+  all: unset;
+  text-align: end;
+}
+
+.footer__link-item {
+  color: #00000099;
+  font-size: 14px;
+}
+
+.footer .footer__item {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.footer .footer__item::after {
+  content: "|";
+  color: #00000099;
+  letter-spacing: 16px;
+}
+
+.footer .footer__item:last-child::after {
+  content: "";
+}
+
+.footer__title {
+  display:none
+}
+
+.footer__links {
+  margin: 0
+}
+
+@media (max-width: 470px) {
+  .footer {
+    height: 80px;
+  }
+
+  .footer .col {
+    margin: 0
+  }
+
+  .footer .footer__item:nth-child(2)::after {
+    content: "";
+  }
+
+  .footer .footer__item:nth-child(3)::after {
+    text-align: center;
+  }
 }
