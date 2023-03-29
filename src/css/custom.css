@@ -23,3 +23,23 @@
   justify-content: center;
   flex-grow: 1;
 }
+
+main {
+  background-color: #FCFAF9;
+}
+
+nav {
+  background-color: #F4F0EE;
+}
+
+.pagination-nav {
+  background-color: #FFFFFF;
+}
+
+.breadcrumbs {
+  background-color: #FCFAF9;
+}
+
+.menu__link {
+  color: #000000
+}
