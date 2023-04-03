@@ -45,7 +45,11 @@ nav {
 }
 
 .pagination-nav {
-  background-color: #ffffff;
+  background-color: #fcfaf9;
+}
+
+.pagination-nav__link {
+  background-color: #FFFFFF;
 }
 
 .breadcrumbs {
