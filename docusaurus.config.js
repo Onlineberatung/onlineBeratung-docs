@@ -58,12 +58,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/sozialplattform_logo.png",
+      image: "/logo.png",
       navbar: {
-        title: "Sozialplattform",
+        title: "Onlineberatung",
         logo: {
-          alt: "Sozialplattform Logo",
-          src: "img/sozialplattform_logo.png",
+          alt: "Onlineberatung Logo",
+          src: "/logo.png",
         },
       },
       footer: {
@@ -72,15 +72,15 @@ const config = {
             items: [
               {
                 label: "Impressum",
-                to: "https://happylife.onlineberatung.net/impressum",
+                to: "/impressum",
               },
               {
                 label: "Datenschutzerklärung",
-                to: "https://happylife.onlineberatung.net/datenschutz",
+                to: "/datenschutz",
               },
               {
                 label: "Nutzungsbedingungen",
-                to: "https://happylife.onlineberatung.net/nutzungsbedingungen",
+                to: "/nutzungsbedingungen",
               },
             ],
           },
