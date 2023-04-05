@@ -66,6 +66,11 @@ const config = {
           src: "/logo.png",
         },
       },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       footer: {
         links: [
           {
