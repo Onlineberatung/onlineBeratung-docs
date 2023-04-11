@@ -77,15 +77,15 @@ const config = {
             items: [
               {
                 label: "Impressum",
-                to: "/../impressum",
+                href: "/impressum",
               },
               {
                 label: "Datenschutzerklärung",
-                to: "/../datenschutz",
+                href: "/datenschutz",
               },
               {
                 label: "Nutzungsbedingungen",
-                to: "/../nutzungsbedingungen",
+                href: "/nutzungsbedingungen",
               },
             ],
           },
