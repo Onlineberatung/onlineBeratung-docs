@@ -37,6 +37,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: 'current'
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -66,21 +67,26 @@ const config = {
           src: "/logo.png",
         },
       },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       footer: {
         links: [
           {
             items: [
               {
                 label: "Impressum",
-                to: "/../impressum",
+                href: "/impressum",
               },
               {
                 label: "Datenschutzerklärung",
-                to: "/../datenschutz",
+                href: "/datenschutz",
               },
               {
                 label: "Nutzungsbedingungen",
-                to: "/../nutzungsbedingungen",
+                href: "/nutzungsbedingungen",
               },
             ],
           },
