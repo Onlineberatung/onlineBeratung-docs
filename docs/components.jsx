@@ -14,3 +14,23 @@ export const PrimaryNote = ({ children }) => (
     <strong>&#9432;</strong> {children}
   </div>
 );
+
+export const Bold = ({ children }) => (
+  <span
+    style={{
+    }}
+  >
+    <strong>{children}</strong>
+  </span>
+);
+
+export const UIElement = ({ children }) => (
+  <span
+    style={{
+    }}
+  >
+    <strong>[{children}]</strong>
+  </span>
+);
+
+
